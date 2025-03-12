@@ -1,7 +1,7 @@
 # Credit Card Fraud Detection Analysis
 
 ## Overview
-This project focuses on analyzing a dataset of credit card transactions to detect fraudulent activities. The dataset contains anonymized credit card transactions made by European cardholders in September 2013. The goal of this analysis is to build predictive models that can accurately identify fraudulent transactions and understand the underlying patterns in the data.
+This project focuses on analysing a dataset of credit card transactions to detect fraudulent activities. The dataset contains anonymised credit card transactions made by European cardholders in September 2013. The goal of this analysis is to build predictive models that can accurately identify fraudulent transactions and understand the underlying patterns in the data.
 
 ## Dataset
 The dataset used in this project is the [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) dataset from Kaggle. It contains the following key columns:
@@ -13,7 +13,7 @@ The dataset used in this project is the [Credit Card Fraud Detection](https://ww
 ## Problem Description
 The goal of this analysis is to detect fraudulent credit card transactions using machine learning models. Specifically, we aim to:
 1. Explore the dataset to understand the distribution of fraudulent and non-fraudulent transactions.
-2. Preprocess the data by handling missing values, outliers, and normalizing features.
+2. Preprocess the data by handling missing values, outliers, and normalising features.
 3. Build and evaluate machine learning models to predict fraudulent transactions.
 4. Address the class imbalance problem using techniques like SMOTE (Synthetic Minority Over-sampling Technique).
 
@@ -73,7 +73,7 @@ Here are some key visualizations from the analysis:
 4. Correlation Matrix:
    ![Correlation Matrix](images/correlation_matrix.png)
 
-## Modeling
+## Modelling
 ### Logistic Regression
 - A logistic regression model was built to predict fraudulent transactions.
 - The model achieved a ROC AUC score of 0.79 without SMOTE and 0.92 with SMOTE.
@@ -88,7 +88,7 @@ This analysis provides valuable insights into detecting fraudulent credit card t
 ## Future Work
 - Explore additional techniques to handle class imbalance, such as undersampling or ensemble methods.
 - Experiment with more advanced models like Gradient Boosting or Neural Networks.
-- Analyze the impact of different feature engineering techniques on model performance.
+- Analyse the impact of different feature engineering techniques on model performance.
 
 ## Dependencies
 The project requires the following Python libraries:
