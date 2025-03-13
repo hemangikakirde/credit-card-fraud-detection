@@ -83,7 +83,7 @@ Here are some key visualizations from the analysis:
 - The model achieved a ROC AUC score of 0.84 without SMOTE and 0.87 with SMOTE.
 
 ## Conclusion
-This analysis provides valuable insights into detecting fraudulent credit card transactions. The visualizations highlight the class imbalance and distribution of transaction amounts and times. The models, especially random forest with SMOTE, show promising results in detecting fraudulent transactions.
+This analysis provides valuable insights into detecting fraudulent credit card transactions. The visualisations highlight the class imbalance and distribution of transaction amounts and times. The models, especially random forest with SMOTE, show promising results in detecting fraudulent transactions.
 
 ## Future Work
 - Explore additional techniques to handle class imbalance, such as undersampling or ensemble methods.
