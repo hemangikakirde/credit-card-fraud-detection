@@ -4,14 +4,16 @@
 This project focuses on analysing a dataset of credit card transactions to detect fraudulent activities. The dataset contains anonymised credit card transactions made by European cardholders in September 2013. The goal of this analysis is to build predictive models that can accurately identify fraudulent transactions and understand the underlying patterns in the data.
 
 ## Dataset
-The dataset used in this project is the [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) dataset from Kaggle. It contains the following key columns:
-- `Time`: Number of seconds elapsed between each transaction and the first transaction in the dataset.
-- `V1-V28`: Anonymized features resulting from a PCA transformation (due to confidentiality issues, the original features are not provided).
-- `Amount`: Transaction amount.
-- `Class`: Target variable indicating whether the transaction is fraudulent (1) or not (0).
+The dataset used in this project is the [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) dataset from Kaggle. 
+It contains the following key columns:
+- Time: Number of seconds elapsed between each transaction and the first transaction in the dataset.
+- V1-V28: Anonymised features resulting from a PCA transformation (due to confidentiality issues, the original features are not provided).
+- Amount: Transaction amount.
+- Class: Target variable indicating whether the transaction is fraudulent (1) or not (0).
 
 ## Problem Description
-The goal of this analysis is to detect fraudulent credit card transactions using machine learning models. Specifically, we aim to:
+The goal of this analysis is to detect fraudulent credit card transactions using machine learning models. 
+Specifically, it aims to:
 1. Explore the dataset to understand the distribution of fraudulent and non-fraudulent transactions.
 2. Preprocess the data by handling missing values, outliers, and normalising features.
 3. Build and evaluate machine learning models to predict fraudulent transactions.
@@ -21,12 +23,12 @@ The goal of this analysis is to detect fraudulent credit card transactions using
 The Jupyter Notebook includes the following sections:
 
 ### 1. Data Loading
-- The dataset is loaded using `pandas` from the `creditcard.csv` file.
+- The dataset is loaded using 'pandas' from the creditcard.csv file.
 
 ### 2. Data Cleaning
 - Check for missing values and duplicates.
-- Handle outliers in the `Amount` column by clipping values above the 99th percentile.
-- Remove irrelevant features (if any).
+- Handle outliers in the 'Amount' column by clipping values above the 99th percentile.
+- Remove irrelevant features if there are any.
 
 ### 3. Exploratory Data Analysis (EDA)
 - Class distribution of fraudulent vs. non-fraudulent transactions.
@@ -34,7 +36,7 @@ The Jupyter Notebook includes the following sections:
 - Correlation matrix to show relationships between numerical variables.
 
 ### 4. Data Preprocessing
-- Normalize the `Amount` and `Time` columns using `StandardScaler`.
+- Normalise the 'Amount' and 'Time' columns using 'StandardScaler'.
 - Split the data into training and testing sets.
 
 ### 5. Model Building and Evaluation
@@ -62,8 +64,8 @@ The Jupyter Notebook includes the following sections:
 - SMOTE significantly improves the recall of both models, indicating better detection of fraudulent transactions.
 - However, it also leads to a decrease in precision for logistic regression, suggesting more false positives.
 
-## Visualizations
-Here are some key visualizations from the analysis:
+## Visualisations
+Here are some key visualisations from the analysis:
 1. Class Distribution:
    ![Class Distribution](images/class_distribution.png)
 2. Transaction Amount Distribution:
@@ -92,19 +94,19 @@ This analysis provides valuable insights into detecting fraudulent credit card t
 
 ## Dependencies
 The project requires the following Python libraries:
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-- `imblearn`
-- `jupyter`
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- imblearn
+- jupyter
 
-These can be installed using the `requirements.txt` file:
+These can be installed using the 'requirements.txt' file:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Acknowledgments
 - Dataset: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) from Kaggle.
-- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `imblearn`.
+- Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, imblearn.
